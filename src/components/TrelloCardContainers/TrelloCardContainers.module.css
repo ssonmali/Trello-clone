@@ -1,0 +1,49 @@
+.mainContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fill, var(--cardWidth));
+  max-height: calc(100vh - 7.5rem);
+  overflow: auto;
+  gap: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.headingContainer {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headingContainer > span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.addCardContainer {
+  width: 100%;
+  height: 170px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  border: 2px dotted #cdccca;
+}
+
+@media (max-width: 850px) {
+  .mainContainer {
+    max-height: calc(100vh - 7.2rem);
+    padding-right: 10px;
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  .mainContainer {
+    max-height: calc(100vh - 8rem);
+  }
+}

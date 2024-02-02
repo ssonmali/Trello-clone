@@ -1,0 +1,28 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 10px 16px;
+  align-items: center;
+  border-bottom: 1px solid #f4f4f4;
+}
+.navElements {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+@media (max-width: 850px) {
+  .logo {
+    display: none;
+  }
+}
+@media (min-width: 850px) {
+  .miniSearch {
+    display: none;
+  }
+  .navElements {
+    gap: 20px;
+  }
+  .navbarContainer {
+    padding: 0 30px 10px 30px;
+  }
+}

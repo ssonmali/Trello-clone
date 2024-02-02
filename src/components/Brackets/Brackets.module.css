@@ -1,0 +1,48 @@
+.mainBracket {
+  margin-top: 10px;
+  padding: 0 16px 10px 16px;
+  width: 100%;
+}
+.publicBrackets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bracketsIcons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 22px;
+}
+
+.mainBracket > strong {
+  font-size: clamp(16px, 4vw, 26px);
+  font-weight: 500;
+}
+
+.bracketsIcons:last-child {
+  gap: 10px;
+  transform: scale(0.8);
+}
+
+@media (min-width: 500px) {
+  .mainBracket {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .publicBrackets {
+    width: 100%;
+  }
+}
+
+@media (min-width: 850px) {
+  .mainBracket {
+    padding: 0 30px 10px 30px;
+  }
+  .bracketsIcons:last-child {
+    gap: 60px;
+    transform: scale(1);
+  }
+}

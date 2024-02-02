@@ -1,0 +1,89 @@
+.cardContainer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: var(--cardWidth);
+  margin: 10px 0;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+  background-size: cover;
+  margin-bottom: 12px;
+}
+
+.cardDescription {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  display: block;
+}
+
+.cardInfo {
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+  opacity: 0.4;
+}
+
+.cardFooterContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+}
+
+.actionContainer {
+  font-size: 12px;
+  color: #000;
+  opacity: 0.4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actionContainer > span > img {
+  opacity: 1;
+}
+
+.actionItem {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.profilePictureContainer {
+  position: relative;
+}
+
+.profileIcon {
+  --spacing: 13px;
+  width: 24px;
+  aspect-ratio: 1;
+  position: absolute;
+  z-index: 10;
+}
+
+.profileIcon:nth-child(1) {
+  left: 0;
+}
+.profileIcon:nth-child(2) {
+  left: calc(var(--spacing));
+  z-index: 100;
+}
+.profileIcon:nth-child(3) {
+  left: calc(var(--spacing) * 2);
+  z-index: 1000;
+}
+.profileIcon:nth-child(4) {
+  left: calc(var(--spacing) * 3);
+  z-index: 1000;
+}
+
+.pill {
+  width: 60px;
+  height: 6px;
+  border-radius: 100000000vh;
+  background-color: red;
+}

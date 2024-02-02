@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import TrelloCard from "./components/TrelloCard/TrelloCard";
+import TrelloCardContainers from "./components/TrelloCardContainers/TrelloCardContainers";
+import Navbar from "./components/Navbar/Navbar";
+import Brackets from "./components/Brackets/Brackets";
 
 function App() {
+  // const cards = new Array(Math.floor(Math.random() * 4) + 1)
+  //   .fill("")
+  //   .map((item, index) => {
+  //     return (
+  //       <TrelloCard key={index} imageUrl="https://source.unsplash.com/random" />
+  //     );
+  //   });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{}}>
+      <Navbar />
+      <Brackets />
+      <TrelloCardContainers />
     </div>
   );
 }
