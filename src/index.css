@@ -33,7 +33,12 @@ body {
   width: 0px;
 }
 
-@media (max-width: 370px) {
+@media (max-width: 420px) {
+  :root {
+    --cardWidth: 325px;
+  }
+}
+@media (max-width: 350px) {
   :root {
     --cardWidth: 288px;
   }
